@@ -8,4 +8,6 @@ https://jsonplaceholder.typicode.com
 
 https://lodash.com/docs/4.17.15#debounce
 
+Aguarda um tempo para poder consumir a api, assim tem uma menor requisição ao servidor.
+
 

@@ -80,5 +80,12 @@ button {
 
 .grid {
   display: grid;
-  color:#fff
+  color:#fff;
+  grid-template-columns: 200px 200px;
+}
+.item {
+	margin: 5px;
+	background:var(--primary-color);
+	text-align: center;
+	font-size: 2.5em;
 }

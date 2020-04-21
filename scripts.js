@@ -9,9 +9,10 @@ const debounceEvent = (fn, wait = 1000, time) =>  (...args) =>
 
 function handleKeyUp(event) {
     let grid = document.querySelector(".grid");
+    grid.innerHTML = "";
     filterUsers(event.target.value)
-    .then(users => users.map( user => grid.innerHTML = user.name ))
+    .then(users => users.map( user => grid.innerHTML += `<div class="item">${user.name}</div>`  ))
 }
 
 document.querySelector("input")
-.addEventListener("keyup", debounceEvent(handleKeyUp, 1000))
+.addEventListener("keyup", debounceEvent(handleKeyUp, 500))
